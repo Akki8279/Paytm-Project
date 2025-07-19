@@ -1,4 +1,7 @@
 @import "tailwindcss";
+::-webkit-scrollbar {
+    display: none;
+}
 .bg{
     background-image: url(zip/asset\ 32.avif);
     background-size: cover;
