@@ -1,0 +1,30 @@
+@import "tailwindcss";
+.bg{
+    background-image: url(zip/asset\ 32.avif);
+    background-size: cover;
+    border: 1px solid #e0d3d33f;
+}
+.after::after{
+    position: relative;
+    bottom: -6px;
+}
+.after:hover::after{
+    content: url(zip/asset\ 40.svg);
+    display: inline-block;
+    animation: arrow 0.3s ease-in;
+}
+@keyframes arrow{
+    from{
+        transform: translate(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.line::after{
+    content: "";
+    border-bottom: 1px solid #ccc;
+    flex: 1;
+}
